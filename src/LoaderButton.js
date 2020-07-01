@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Spinner } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner';
 
 export default function LoaderButton({
   isLoading, className = '', disabled = false, ...props

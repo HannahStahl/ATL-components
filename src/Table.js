@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Table, Modal } from 'react-bootstrap';
+import Table from 'react-bootstrap/Table';
+import Modal from 'react-bootstrap/Modal';
 import LoaderButton from './LoaderButton';
 import EditForm from './EditForm';
 

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { FormGroup, FormLabel, FormControl } from 'react-bootstrap';
+import FormGroup from 'react-bootstrap/FormGroup';
+import FormLabel from 'react-bootstrap/FormLabel';
+import FormControl from 'react-bootstrap/FormControl';
 import LoaderButton from './LoaderButton';
 
 export default ({ fields, original, save, isLoading, joiningTables }) => {
@@ -35,7 +37,7 @@ export default ({ fields, original, save, isLoading, joiningTables }) => {
           {fields[key].type === 'textarea' && (
             <FormControl
               value={updated[key] || ''}
-              componentClass='textarea'
+              as='textarea'
               rows='3'
               onChange={e => setUpdated({ ...updated, [key]: e.target.value })}
             />
@@ -43,7 +45,7 @@ export default ({ fields, original, save, isLoading, joiningTables }) => {
           {fields[key].type === 'dropdown' && (
             <FormControl
               value={updated[key] || ''}
-              componentClass='select'
+              as='select'
               onChange={e => setUpdated({ ...updated, [key]: e.target.value })}
             >
               <option value='' />
