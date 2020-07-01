@@ -1,0 +1,12 @@
+.LoaderButton .spinning {
+  margin-right: 7px;
+  top: 2px;
+}
+
+.table-container {
+  overflow-x: scroll;
+}
+
+.remove-row {
+  width: 30px;
+}

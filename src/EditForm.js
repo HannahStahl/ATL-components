@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { FormGroup, FormLabel, FormControl } from 'react-bootstrap';
 import LoaderButton from './LoaderButton';
 
 export default ({ fields, original, save, isLoading, joiningTables }) => {
@@ -24,7 +24,7 @@ export default ({ fields, original, save, isLoading, joiningTables }) => {
     <form onSubmit={(e) => save(e, updated)}>
       {Object.keys(fields).map((key) => (
         <FormGroup key={key} controlId={key}>
-          <ControlLabel>{fields[key].label}</ControlLabel>
+          <FormLabel>{fields[key].label}</FormLabel>
           {['text', 'number', 'email'].includes(fields[key].type) && (
             <FormControl
               value={updated[key] || ''}
