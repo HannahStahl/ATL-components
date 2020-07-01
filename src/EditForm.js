@@ -62,8 +62,8 @@ export default ({ fields, original, save, isLoading, joiningTables }) => {
       <LoaderButton
         block
         type='submit'
-        bsSize='large'
-        bsStyle='primary'
+        size='lg'
+        variant='primary'
         isLoading={isLoading}
         disabled={!validateForm()}
       >

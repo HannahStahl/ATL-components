@@ -127,8 +127,8 @@ export default ({ columns, rows, setRows, itemType, joiningTables, API }) => {
               <p>{`Are you sure you want to remove this ${itemType}?`}</p>
               <LoaderButton
                 block
-                bsSize='large'
-                bsStyle='primary'
+                size='lg'
+                variant='primary'
                 isLoading={isLoading}
                 onClick={removeRow}
               >
@@ -136,7 +136,8 @@ export default ({ columns, rows, setRows, itemType, joiningTables, API }) => {
               </LoaderButton>
               <LoaderButton
                 block
-                bsSize='large'
+                size='lg'
+                variant='secondary'
                 onClick={() => setRowSelectedForRemoval(undefined)}
               >
                 Cancel
