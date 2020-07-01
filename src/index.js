@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './styles.module.css'
+import ExampleComponent from './ExampleComponent';
+import LoaderButton from './LoaderButton';
+import EditForm from './EditForm';
+import Table from './Table';
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { ExampleComponent, LoaderButton, EditForm, Table };

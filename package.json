@@ -49,5 +49,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-bootstrap": "^1.0.1"
+  }
 }
